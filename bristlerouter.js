@@ -40,7 +40,7 @@ class BristleRouter {
     var output = null;
     Object.keys(this.routes).forEach(checkPath => {
       var checkParts = this.getParts(checkPath);
-      if (output === null && this.doRoutePartsMatch(checkParts, inputPath)) {
+      if (output === null && this.doRoutePartsMatch(inputPath, checkParts)) {
         output = checkPath;
       }
     });
