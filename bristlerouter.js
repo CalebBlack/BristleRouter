@@ -1,7 +1,7 @@
 const Bristle = require('bristlejs');
 
 function createRouter(map) {
-  var router = new Bristle('router');
+  var router = new Bristle({type:'div',class:'bristle-router'});
   var routes = Object.assign({}, map);
   new BristleRouter(router, routes);
   return router;
