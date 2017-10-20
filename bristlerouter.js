@@ -24,7 +24,7 @@ class BristleRouter {
     document.addEventListener('click',(event)=>{
       let target = event.target;
       if (target.tagName.toLowerCase() === 'a') {
-        if (this.routes.hasOwnProperty(target.pathname  || '/')) {
+        if (target.hostname === window.location.hostname && this.routes.hasOwnProperty(target.pathname  || '/')) {
           event.preventDefault();
           history.pushState(null, null, target.pathname);
           this.setURL(target.pathname);
