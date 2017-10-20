@@ -1,0 +1,27 @@
+{
+  "name": "bristlerouter",
+  "version": "0.1.0",
+  "description": "Single page applications with BristleJS",
+  "main": "bristlerouter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebBlack/BristleRouter.git"
+  },
+  "keywords": [
+    "bristle",
+    "router",
+    "javascript",
+    "spa",
+    "singlepage",
+    "single-page"
+  ],
+  "author": "CalebBlack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebBlack/BristleRouter/issues"
+  },
+  "homepage": "https://github.com/CalebBlack/BristleRouter#readme"
+}
