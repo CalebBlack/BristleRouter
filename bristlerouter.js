@@ -11,7 +11,7 @@ class BristleRouter {
     this.checkURL = this.checkURL.bind(this);
     this.setURL = this.setURL.bind(this);
     this.getMatchingRoute = this.getMatchingRoute.bind(this);
-    this.URL = document.URL;
+    this.URL = window.location.pathname;
     this.bristle = bristle;
     this.routes = routes;
     window.addEventListener("hashchange", (event) => {
@@ -72,8 +72,8 @@ class BristleRouter {
     });
   }
   checkURL() {
-    if (this.lastURL !== document.URL) {
-      this.setURL(document.URL);
+    if (this.URL !== window.location.pathname) {
+      this.setURL(window.location.pathname);
     }
   }
   setURL(URL) {
