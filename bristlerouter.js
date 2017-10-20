@@ -63,8 +63,9 @@ class BristleRouter {
     if (routeParts.length !== currentParts.length) {
       return false;
     }
-    for (var i = 0; i < routeParts; i++) {
-      if (routeParts[i] !== '*' && routeParts[i] !== currentPath[i]) {
+    for (var i = 0; i < routeParts.length; i++) {
+      if (routeParts[i] !== '*' && routeParts[i] !== currentParts[i]) {
+        console.log('got false');
         return false;
       }
     }
