@@ -1,6 +1,6 @@
 {
   "name": "bristlerouter",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Single page applications with BristleJS",
   "main": "bristlerouter.js",
   "scripts": {

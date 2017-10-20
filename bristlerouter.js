@@ -17,7 +17,18 @@ class BristleRouter {
     window.addEventListener("hashchange", (event) => {
       this.checkURL();
     });
+    this.disableRouteRefreshing.bind(this)();
     this.render();
+  }
+  disableRouteRefreshing(){
+    document.addEventListener('click',(event)=>{
+      let target = event.target;
+      if (target.tagName.toLowerCase() === 'a') {
+        if (this.routes.hasOwnProperty(target.href)) {
+          event.preventDefault();
+        }
+      }
+    })
   }
   render() {
     this.bristle.children = [];
