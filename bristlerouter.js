@@ -26,6 +26,7 @@ class BristleRouter {
       if (target.tagName.toLowerCase() === 'a') {
         if (this.routes.hasOwnProperty(target.pathname  || '/')) {
           event.preventDefault();
+          history.pushState(null, null, target.pathname);
         }
       }
     })
