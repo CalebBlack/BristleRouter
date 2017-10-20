@@ -24,7 +24,7 @@ class BristleRouter {
     document.addEventListener('click',(event)=>{
       let target = event.target;
       if (target.tagName.toLowerCase() === 'a') {
-        if (this.routes.hasOwnProperty(target.href)) {
+        if (this.routes.hasOwnProperty(target.href || '/')) {
           event.preventDefault();
         }
       }
